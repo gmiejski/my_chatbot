@@ -12,4 +12,16 @@ class Message {
         this.author = author
         this.dateTime = dateTime
     }
+
+    String getContent() {
+        return content
+    }
+
+    String getAuthor() {
+        return author
+    }
+
+    String getDateTime() {
+        return dateTime
+    }
 }

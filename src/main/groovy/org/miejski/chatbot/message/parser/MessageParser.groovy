@@ -1,11 +1,13 @@
 package org.miejski.chatbot.message.parser
 
+import java.nio.file.Files
+
 
 class MessageParser {
 
     public static void main(String[] args) {
 
-        File file = new File("./src/main/resources/messages.html")
+        File file = new File("./src/main/resources/messages.htm")
 
         ChatHistory chatHistory = new ChatHistory()
 
@@ -28,7 +30,12 @@ class MessageParser {
 
         }
 
-        println()
+        def myUserName = "Grzesiek Miejski"
+
+        def words = chatHistory.getWordsWithCount(myUserName)
+        for (t in words) {
+            println("${t[0]} ---> ${t[1]}")
+        }
     }
 
 

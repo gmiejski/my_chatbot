@@ -74,4 +74,5 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-src/main/resources/messages.html
+src/main/resources/*.htm
+src/main/resources/*.html
